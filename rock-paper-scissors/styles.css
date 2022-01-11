@@ -1,0 +1,109 @@
+body {
+  background-color: #1c2541;
+  color: #efe7ef;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 0.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 3vw;
+}
+
+.picks_wrapper,
+.score_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+  padding: 2vw 0;
+}
+
+.score_wrapper {
+  width: 50%;
+}
+
+.pick {
+  width: 8vw;
+  height: 8vw;
+  background-color: #369696;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5vw;
+  text-align: center;
+  padding: 1vw 0.8vw 0.8vw 0.8vw;
+}
+
+.pick:hover,
+.reset_button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #41b4b4;
+  box-shadow: 0px 0px 2vw #369696;
+}
+
+.pick p {
+  font-size: 1.5vw;
+}
+
+.pick i {
+  font-size: 5vw;
+  color: #ffcf56;
+  transition: all 0.3s ease-in-out;
+}
+
+.pick:hover i {
+  color: #ffc533;
+}
+
+.round_wrapper {
+  text-align: center;
+}
+
+.round_wrapper span {
+  font-weight: bold;
+}
+
+.current_round_result {
+  font-size: 3vw;
+}
+
+.round_wrapper > p:nth-child(2) {
+  font-size: 1.8vw;
+}
+
+.score_vs h2 {
+  font-size: 8vw;
+  margin: 0;
+}
+
+.player_score_wrapper,
+.computer_score_wrapper {
+  text-align: center;
+}
+
+.player_score_wrapper h2,
+.computer_score_wrapper h2 {
+  font-size: 2.2vw;
+  margin: 0 0 1vw 0;
+}
+.player_score_wrapper span,
+.computer_score_wrapper span {
+  font-size: 4vw;
+}
+
+.reset_button {
+  opacity: 0;
+  margin: auto;
+  margin-top: 2vw;
+  width: fit-content;
+  padding: 1vw;
+  background-color: #369696;
+  border-radius: 0.5vw;
+  font-size: 2vw;
+  transition: all 0.3s ease-in-out;
+}
