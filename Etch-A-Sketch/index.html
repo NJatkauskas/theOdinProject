@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="btn_wrapper">
+      <div class="buttons">
+        <div class="clear_btn btn">Clear grid</div>
+        <div class="single_color btn">Single color mode</div>
+        <div class="multi_color btn">Multi color mode</div>
+      </div>
+      <div class="range_slider">
+        <label for="canvas_size">Canvas size: <span class="canvas_size_value">400</span></label>
+        <input type="range" id="canvas_size" name="canvas_size" min="100" max="800" value="400" step="10" />
+      </div>
+      <div class="range_slider">
+        <label for="cell_size">Cell size: <span class="cell_size_value">16</span></label>
+        <input type="range" id="cell_size" name="cell_size" min="2" max="50" value="16" />
+      </div>
+    </div>
+    <div class="container"></div>
+
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
